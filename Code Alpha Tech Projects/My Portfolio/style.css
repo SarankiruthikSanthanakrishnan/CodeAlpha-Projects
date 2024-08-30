@@ -1,0 +1,148 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#head
+{
+    background-image:linear-gradient(red,blue);
+    background-color:azure;
+    background-clip: text;
+    color:transparent;
+    width:450px;
+    font-weight: 10000px;
+    justify-content: center;
+}
+
+#about
+{
+    background-color:silver;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: inset 7px 7px 5px grey,
+    inset -7px -7px 5px white;  
+}
+
+
+#edu
+{
+    background-color:silver;
+    padding: 45px;
+    border-radius:8px;  
+    box-shadow: inset 7px 7px 5px grey,
+    inset -7px -7px 5px white;  
+}
+
+
+#skills
+{
+  background-color:silver;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: inset 7px 7px 5px grey,
+    inset -7px -7px 5px white;  
+}
+
+
+#langk
+{
+    background-color:silver;
+    border-radius:8px; 
+    box-shadow: inset 7px 7px 5px grey,
+    inset -7px -7px 5px white;  
+}
+
+#link{
+  background-image:linear-gradient(red,blue);
+  background-color:azure;
+  background-clip: text;
+  color:transparent;
+}
+
+
+/*content
+body{
+    margin-top: 70px;
+  }
+  
+  body::before{
+    content: 'XS';
+    color:orangered;
+    font-size: 30px;
+    position: fixed;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+  }
+  
+  @media (min-width: 576px){
+    body::before{
+      content: 'SM';
+    }
+  }
+  
+  
+  @media (min-width: 768px){
+    body::before{
+      content: 'MD';
+    }
+  }
+  
+  @media (min-width: 992px){
+    body::before{
+      content: 'LG';
+    }
+  }
+  
+  @media (min-width: 1200px){
+    body::before{
+      content: 'XL';
+    }
+  }
+  @media (min-width: 1400px){
+    body::before{
+      content: 'XXL';
+    }
+  }
+*/
+
+  /*Resume*/
+  #profile
+{
+    background-color:#fff;
+    border-radius:8px;
+    box-shadow: inset 7px 7px 5px  gray,
+                inset -7px -7px 5px gray;
+}
+
+
+
+#tk
+{
+    background-color:#fff;
+    border-radius:8px;
+    box-shadow: inset 7px 7px 5px  gray,
+                inset -7px -7px 5px gray;
+
+}
+
+#achieve
+{
+    border-radius:8px;
+    box-shadow: inset 7px 7px 5px  gray,
+                inset -7px -7px 5px gray;
+
+}
+
+#education
+{
+  margin-left: 2px;
+  margin-right: 2px;
+}

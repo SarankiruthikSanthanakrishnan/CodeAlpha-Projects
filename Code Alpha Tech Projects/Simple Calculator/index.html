@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block">
+        <div class="calculator">
+            <h1>CALCULATOR</h1>
+            <input type="text" placeholder="0" id="output" readonly>
+            <button onclick="clr()" class="sym">Clr</button>
+            <button onclick="del()" class="sym">Del</button>
+            <button onclick="display('/100')" class="sym">%</button>
+            <button onclick="display('/')" class="sym">÷</button>
+            <button onclick="display('9')" class="nrl">9</button>
+            <button onclick="display('8')" class="nrl">8</button>
+            <button onclick="display('7')" class="nrl">7</button>
+            <button onclick="display('+')" class="sym">+</button>
+            <button onclick="display('6')" class="nrl">6</button>
+            <button onclick="display('5')" class="nrl">5</button>
+            <button onclick="display('4')" class="nrl">4</button>
+            <button onclick="display('*')" class="sym">x</button>
+            <button onclick="display('3')" class="nrl">3</button>
+            <button onclick="display('2')" class="nrl">2</button>
+            <button onclick="display('1')" class="nrl">1</button>
+            <button onclick="display('-')" class="sym">-</button>
+            <button onclick="display('0')" class="nrl">0</button>
+            <button onclick="display('.')" class="nrl">.</button>
+            <button onclick="cal()" id="equ" class="sym">=</button>
+        </div>
+    </div>
+
+    <script>
+        let op=document.getElementById("output");
+
+        function display(num)
+        {
+            op.value += num;
+        }
+        function clr()
+        {
+            op.value="";
+        }
+
+        function del()
+        {
+            op.value = op.value.slice(0,-1);
+        }
+
+        function cal()
+        {
+            try{
+                op.value=eval(op.value);
+            }
+            catch(err)
+            {
+                alert("Invalid Calculation");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

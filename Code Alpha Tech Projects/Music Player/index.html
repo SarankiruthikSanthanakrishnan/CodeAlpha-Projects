@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player </title>
+    <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="song-info">
+            <img id="thumbnail" src="thumbnail1.jpg" alt="Song Thumbnail">
+            <h2 id="song-title">Song Title</h2>
+        </div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="prevBtn">Prev</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="time">
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+        </div>
+        <div class="playlist">
+            <ul id="playlist">
+                <li class="song" data-index="0">Amma Amma</li>
+                <li class="song" data-index="1">Paara</li>
+                <li class="song" data-index="2">Spark</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
